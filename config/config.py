@@ -72,12 +72,12 @@ SONG_DOWNLOAD_DURATION = int(
 
 
 # You'll need a Private Group ID for this.
-LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", ""))
+LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "-1002190229782"))
 
 
 # Your User ID.
 OWNER_ID = list(
-    map(int, getenv("OWNER_ID", "6815918609").split())
+    map(int, getenv("OWNER_ID", "6587731758").split())
 )  # Input type must be interger
 
 
@@ -91,7 +91,7 @@ HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
 # For customized or modified Repository
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
-    "https://github.com/TheTeamVivek/YukkiMusic",
+    "https://github.com/rishabh16120022/Darkymusic",
 )
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "master")
 
@@ -104,10 +104,10 @@ GIT_TOKEN = getenv(
 
 # Only  Links formats are  accepted for this Var value.
 SUPPORT_CHANNEL = getenv(
-    "SUPPORT_CHANNEL", "https://t.me/TheTeamVivek"
+    "SUPPORT_CHANNEL", "https://t.me/DarkyworldxD"
 )  # Example:- https://t.me/TheTeamVivek
 SUPPORT_GROUP = getenv(
-    "SUPPORT_GROUP", "https://t.me/TheTeamVk"
+    "SUPPORT_GROUP", "https://t.me/fairytalexD"
 )  # Example:- https://t.me/TheTeamVk
 
 
@@ -132,7 +132,7 @@ TELEGRAM_DOWNLOAD_EDIT_SLEEP = int(getenv("TELEGRAM_EDIT_SLEEP", "5"))
 
 
 # Your Github Repo.. Will be shown on /start Command
-GITHUB_REPO = getenv("GITHUB_REPO", "https://github.com/TheTeamVivek/YukkiMusic")
+GITHUB_REPO = getenv("GITHUB_REPO", "https://t.me/pfp4uh") 
 
 
 # Spotify Client.. Get it from https://developer.spotify.com/dashboard
@@ -206,7 +206,7 @@ autoclean = []
 
 START_IMG_URL = getenv(
     "START_IMG_URL",
-    "https://te.legra.ph/file/4ec5ae4381dffb039b4ef.jpg",
+    "https://i.imghippo.com/files/FXyDv1723820755.jpg",
 )
 
 PING_IMG_URL = getenv(
@@ -351,7 +351,7 @@ if TELEGRAM_AUDIO_URL:
 
 
 if STREAM_IMG_URL:
-    if STREAM_IMG_URL != "https://telegra.ph/file/e24f4a5f695ec5576a8f3.jpg":
+    if STREAM_IMG_URL != "https://i.imghippo.com/files/FXyDv1723820755.jpg":
         if not re.match("(?:http|https)://", STREAM_IMG_URL):
             print(
                 "[ERROR] - Your STREAM_IMG_URL url is wrong. Please ensure that it starts with https://"
